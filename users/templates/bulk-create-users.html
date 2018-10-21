@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %} Bulk Create Users - {{ block.super }} {% endblock %}
+
+{% block content %}
+    <h2>Crie usuarios em Massa</h2>
+
+    {% if message %}
+        <div class="success">
+            {{ message }}
+        </div>
+    {% endif %}
+
+    <form>
+        <div>
+            <label for="name">Faça o upload do arquivo CSV:</label>
+            <input type="file" id="csv" name="csv"/>
+        <div>
+    </form>
+{% endblock %}
