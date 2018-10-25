@@ -11,10 +11,13 @@
         </div>
     {% endif %}
 
-    <form>
+    <form method="POST" action="" enctype="multipart/form-data"> 
+        {% csrf_token %}
         <div>
             <label for="name">Faça o upload do arquivo CSV:</label>
-            <input type="file" id="csv" name="csv"/>
+            <input type="file" id="csv" name="csv" accept=".csv"/>
         <div>
+
+        <input id="button" type="submit" value="enviar"/>
     </form>
 {% endblock %}
