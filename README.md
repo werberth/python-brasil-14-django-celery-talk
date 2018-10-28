@@ -4,6 +4,8 @@ Código fonte do exemplo utilizado na palestra *"Executando Tarefas assíncronas
 
 No exemplo eu utilizo celery para processar de forma assíncrona a criação de usuarios em massa através de um arquivo *.csv*.
 
+Link dos slides [aqui](https://speakerdeck.com/werberth/executando-tarefas-assincronas-no-django-usando-celery).
+
 ## Instalação
 ```
     # Criando ambiente virtual
