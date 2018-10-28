@@ -1,40 +1,11 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
     <head>
     <meta charset="UTF-8">
     <title>{% block title %} Python Brasil 2018 {% endblock %}</title>
-    <style>
-        body {
-            margin: 4em;
-        }
-
-        form {
-            margin-top: 2em;
-        }
-
-        form label {
-            font-size: 20px;
-            display: block;
-        }
-
-        form input {
-            margin-top: 2em;
-        }
-
-        .success {
-            background-color: #F2FCEE;
-            font-weight: bold;
-            margin-top: 1em;
-            margin-botton: 5em;
-            padding: 2em;
-        }
-
-        #button {
-            margin-top: 2em;
-            padding: 5px;
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="{% static 'app.css' %}">
     </head>
     
     <body>
